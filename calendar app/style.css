@@ -1,0 +1,198 @@
+*{
+    font-family:monospace;
+}
+body{
+    background-color: #ebddf99e;
+}
+.fs{
+    font-size: 9px;
+    /* background-color: white; */
+    color: rgb(245, 147, 245);
+    position: relative;
+    bottom:0;
+    left: 0;
+    display: flex;
+    flex-wrap: nowrap;
+}
+#disabled{
+    border: none;
+    background-color: rgb(97, 9, 148);
+    color: white;
+}
+
+#enabled{
+    border: none;
+    border-bottom: solid white 2px;
+    background-color: rgb(97, 9, 148);
+    color: white;
+    box-shadow: none;
+}
+.sty{
+    padding: 10px;
+}
+.sty1{
+    margin-left: 15px;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calendar{
+    width:720px ;
+    height: 700px;
+    background-color: rgb(20, 18, 18);
+    position: relative;
+}
+
+.months{
+    width: 100%;
+    height: 12rem;
+    background-color: #a575d3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    
+}
+.months div{
+    /* color:#350561 ; */
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: white;
+}
+.date{
+    position: absolute;
+    top: 1%;
+    right: 40%;
+    color: white;
+}
+
+#arrw{
+    font-size: 1rem;
+}
+
+.week{
+  width: 100%;
+  height: 5rem;
+  
+  display: flex;
+  /* justify-content: space-around; */
+
+  flex-wrap: wrap;
+  align-items: center;
+}
+.week div{
+    font-size: 1.5rem;
+    font-weight: 400;
+    /* letter-spacing: 0.1rem; */
+    width: calc(50rem/7);
+    display: flex;
+    justify-content: center;
+    text-shadow: black 1px 1px;
+    color: white;
+    padding-left: 2rem;
+}
+.day{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* padding-left: 3.5rem; */
+}
+.day div{
+    font-size: 1.4rem;
+    margin: 0.3rem;
+    width: calc(40rem/6);
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.day div:hover{
+    background-color: #7423c0;;
+    color: white;
+}
+.lastMnDt,.nxtMnDt{
+    opacity: 0.5;
+}
+/* .today{
+    background-color: #a575d3;
+    color: white;
+} */
+
+body{
+    position: relative;
+}
+.agenda ,.tasks{
+    display: none; /* Hidden by default */
+    position:absolute ; /* Stay in place */
+    margin-bottom: 30px;
+    margin-right: 30px;
+    right: 0;
+    bottom: 0;
+    width: 20%; /* Full width */
+    height: 28%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #fefefe;
+  }
+  .tasks{
+      background-color:rgb(97, 9, 148) ;
+      height: 25%;
+  }
+  .header,.head{
+      background-color: rgb(97, 9, 148);
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 5px;
+      height: 40px;
+  }
+  .center{
+    margin: auto;
+    padding: 20px;
+    height: 130px;
+    border: 0;
+    background-color: rgb(97, 9, 148);
+    color: white;
+  }
+  .content{
+    margin: auto;
+    padding: 20px;
+    height: 160px;
+    border: 0;
+  }
+  .foot{
+    background-color: rgb(97, 9, 148);
+    height: 40px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer{
+    height: 50px;
+}
+
+#disTask{
+    /* border-left:solid 4px white; */
+    background-color: white;
+    height: 700px;
+    width: 170px;
+    padding: 15px;
+    font-weight: 600;
+}

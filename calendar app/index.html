@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calendar</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" 
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" 
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <div class="container ">
+        <div class="calendar col-lg-11">
+            <div class="months">
+                <div class="date"></div>
+                <div id="pointToday">
+                    <i class=" far fa-calendar-alt"></i>
+                    <div class="d-inline">Today</div>
+                </div>
+                <i class="fas fa-arrow-up up"></i>
+                <i class="fas fa-arrow-down down"></i>
+                <div id="arrw">
+                    <i class="fas fa-chevron-down"></i>
+                    <div class="d-inline mnth">Jan</div>
+                </div>
+                <div id="arrw">
+                    <i class="fas fa-chevron-down"></i>
+                    <div class="d-inline yr"></div>     
+                </div>
+            </div>
+            <div class="week">
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+                <div>Sun</div>
+            </div>
+            <div class="day" id="event" >
+            </div>
+        </div>
+        <div class="col-lg-1" id="disTask" type="button" onclick=""></div>
+    </div>
+
+<!-- The Modal -->
+<div id="myModal" class="agenda">
+  <!-- Modal content -->
+    <div class="header">
+        <span class="close">&times;</span>
+    </div>
+    <div class="content">
+        <p><i class="fas fa-circle"></i><span class="px-2">Calendar</span><i class="fas fa-angle-down"></i></p>
+        <div class="my-1">
+            <i class="fas fa-plus-circle"></i>
+            <input class="border-0 border-bottom" type="text" id="ip1" value="" placeholder="Add a title"/>
+        </div>
+        <div class="my-1">
+            <i class="fas fa-user-clock"></i>
+            <input type="time"  class="border-0 border-bottom" value="" id="ip2">to
+            <input type="time"  class="border-0 border-bottom"  value=""  id="ip3">
+            
+        </div>
+        <div class="my-1">
+            <i class="fas fa-align-left"></i>
+            <input type="text" class="border-0 border-bottom" value="" id="ip4" placeholder="Add a description"/>
+        </div>
+
+    </div>
+    <div class="footer px-2">
+        <button type="button" onclick="saveTask()" class="btn btn-dark">Save</button>
+        <button type="button" class="btn btn-secondary" onclick="discardModal()">Discard</button>    
+    </div>
+</div>
+
+<!--Edit Modal content -->
+<div id="Modal2" class="tasks">
+</div>
+<script src="./calendar.js"></script>
+</body>
+</html>
