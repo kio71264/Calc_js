@@ -1,1 +1,1 @@
-# Calc 
+my first project in js
